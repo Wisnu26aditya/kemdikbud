@@ -11,7 +11,7 @@ if( isset($_SESSION['ERRMSG_ARR']) && is_array($_SESSION['ERRMSG_ARR']) && count
 	unset($_SESSION['ERRMSG_ARR']);
 }
 ?>
-<form action="reg.php" method="POST">
+<form action="login.php" method="POST">
 Username<br>
 <input type="text" name="uname" /><br>
 Password<br>
