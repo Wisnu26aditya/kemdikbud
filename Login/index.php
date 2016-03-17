@@ -1,7 +1,7 @@
 <?php
 include('login.php'); // Memasuk-kan skrip Login 
 
-if(isset($_SESSION['login_nama'])){
+if(isset($_SESSION['login_user'])){
 header("location: profile.php");
 }
 ?>

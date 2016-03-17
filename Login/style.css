@@ -85,13 +85,24 @@ input[type=submit]{
 }
 
 #profile {
-padding:50px;
+padding:20px;
 border:1px solid grey;
 font-size:20px;
 background-color:#A2DED0;
 }
+#header {
+padding:200px;
+border:1px solid grey;
+font-size:20px;
+/*background-color:#A2DED0;*/
+}
 #logout {
 float:right;
+padding:5px;
+border:dashed 1px gray
+}
+#tabel {
+float:bottom;
 padding:5px;
 border:dashed 1px gray
 }

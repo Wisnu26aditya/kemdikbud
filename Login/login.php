@@ -1,6 +1,6 @@
 <?php
 session_start(); // Memulai Session
-$error='Gagal Login'; // Variabel untuk menyimpan pesan error
+$error=''; // Variabel untuk menyimpan pesan error
 if (isset($_POST['submit'])) {
 if (empty($_POST['username']) || empty($_POST['password'])) {
 $error = "Username or Password is invalid";
@@ -20,10 +20,10 @@ $password = mysql_real_escape_string($password);
 // Seleksi Database
 $db = mysql_select_db("ftm", $connection);
 // SQL query untuk memeriksa apakah karyawan terdapat di database?
-$query = mysql_query("select * from login_absen where login_password='$password' AND login_username='$username'", $connection);
+$query = mysql_query("select * from karyawan where pass_karyawan='$password' AND user_karyawan='$username'", $connection);
 $rows = mysql_num_rows($query);
 if ($rows == 1) {
-$_SESSION['login_nama']=$username; // Membuat Sesi/session
+$_SESSION['login_user']=$username; // Membuat Sesi/session
 header("location: profile.php"); // Mengarahkan ke halaman profil
 } else {
 $error = "Username atau Password belum terdaftar";
