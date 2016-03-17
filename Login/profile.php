@@ -4,7 +4,7 @@ include('session.php');
 <!DOCTYPE html>
 <html>
 <head>
-<title>Nyekrip Halaman Khusus</title>
+<title>Biodata</title>
 <link href="style.css" rel="stylesheet" type="text/css">
 </head>
 <body>
